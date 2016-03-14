@@ -1,17 +1,17 @@
 language: python
 python:
-  - 2.6
+  # - 2.6
   - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
+  # - 3.2
+  # - 3.3
+  # - 3.4
   - 3.5
-  - nightly
+  # - nightly
 env:
   global:
     - PUBLISH_BRANCH=master BUILD_BRANCH="builder" wheelhouse="$HOME/wheelhouse"
     # GH_TOKEN created with `travis encrypt GH_TOKEN=$TOKEN --add env.global`
-    - secure: CM0zA00SdvRDu2AVKw+w55VxeX/StKNIrzt1RpxCPIeWNQXgTxkcsN6Xq/rmhuUvgEWeXkt4hLg1CgaMqvlkPI9o45ddyIEBDzmzLOIXlccsJ/owKKmF98MsMBrKPA+qdP3fbfzkpVUk+AYZ9FGpe0PFZ5AKGZCQ5vu3g4CCdDc=
+    - secure: Q8EX5mBhKnBqqo1JUkC1bcWnR0m9VE9/8rXFmLdsXH7Q19o7r4R+W3I5LEcrfpnNvDaiJgLwbGlI0GZEYmU4CwSoR5J6SAjvuq/ljKfP0/m+8yRtUpzVLPsLqwmhIKZEjornhCPdLLaOCjKfWRfXoGkLcU+z6BigThbrLSuhwJ3Caqo0bUun8fvlq+HMRzaeMnFRUaci4A5Xf8bZh9/Kp+GdW+8Wbf9cDrBVtE6ETMy0BGteSir6Y1Iy+jHKEpk6tnLaa6BW6qyrcXv4FxJj77joQiiIB8bCn7HSCO2w2SIfxV8QDuGe63wgygFg+Ig1WwAYcez6peX5OSZD5nqTZSkzGwP1KrVbk4Z+ZclZyr33lCk9+t6heXlg61H+oHp/14vrfJXwc9EwwmeIImsbk2c64agjnEDY4ZSaSTMhSDu4TnWU6igybGr1zIGdQaAViR4lkZ64+uKY8TCgr2pO6JY5v1fFjxyU7qAqDl9wfQZgy4VZX1VNtXNE4QvONeKz3jJIHFkQxlAI2aiTwVNTNGrl0dSUv+nWS0dwj7V9g7CRMY2mL8qwGQWHj6rq3/4pr1nlaEBPy76OXy/7fm15VeWSJ/u0QzEGF9y+hU3PZ+1Xv4/8k66yaZAWIOmG4VZbuYA8s4CPRsuFf2TP30wGLjiIUW1SUOLeU0vB8xUMcmI=
 install:
   - pip install wheel
 before_script:
