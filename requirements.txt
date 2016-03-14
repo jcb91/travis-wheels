@@ -16,3 +16,4 @@ pexpect
 decorator
 path.py
 jupyter
+notebook
