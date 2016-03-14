@@ -16,4 +16,4 @@ pexpect
 decorator
 path.py
 jupyter
-notebook>=4.0<5.0
+notebook >=4.0,<5.0
